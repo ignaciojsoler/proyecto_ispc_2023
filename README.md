@@ -8,6 +8,9 @@
 
 We Fix es una plataforma digital creada para la búsqueda de servicios para el hogar de manera integral, donde los usuarios pueden buscar entre múltiples opciones de prestadores disponibles según sus necesidades así como también ofrecer sus servicios hacia potenciales clientes. <br> <br>
 
+<br>
+Link al repositorio 2022: https://github.com/Morgwens/Proyecto-ISPC/<br>
+
 
 # PARA INSTALAR ANGULAR:
 
