@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Font family*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Paleta de colores*/
+:root {
+  --main-white: whitesmoke;
+  --main-blue: #001e6c;
+  --main-light-blue: #42459b;
+  --main-dark-blue: #000040;
+  --main-orange: #e8630a;
+  --main-light-orange: #ff9441;
+  --main-dark-orange: #af3300;
+}
+
+/* Resets generales*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Body */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hacia-abajo {
+  padding-top: 7em;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
