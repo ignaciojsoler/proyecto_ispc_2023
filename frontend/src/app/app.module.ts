@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { RegistroPrestadorComponent } from './registro-prestador/registro-prestador.component';
+import { FrecuentesComponent } from './frecuentes/frecuentes.component';
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { RegistroComponent } from './pages/registro/registro.component';
@@ -24,6 +25,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
     SobreNosotrosComponent,
     ContactoComponent,
     RegistroPrestadorComponent,
+    FrecuentesComponent,
     ButtonComponent,
     InputComponent,
     RegistroComponent
