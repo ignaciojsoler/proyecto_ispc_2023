@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'registro_prestador', component: RegistroPrestadorComponent },
   { path: 'home', component: HomeComponent },
   { path: 'frecuentes', component: FrecuentesComponent },
+  { path: 'contacto', component: ContactoComponent },
 ];
 
 @NgModule({
