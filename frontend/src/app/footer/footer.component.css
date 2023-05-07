@@ -1,0 +1,22 @@
+.text-reset {
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .footer-content, 
+  .footer-copy a {
+    font-size: 14px;
+  }
+  .footer-content p {
+    margin-bottom: 3px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
