@@ -1,0 +1,8 @@
+.primary-btn {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.primary-btn:hover {
+    background-color: var(--main-dark-blue);
+}
