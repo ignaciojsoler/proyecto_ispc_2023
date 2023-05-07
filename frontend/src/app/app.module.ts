@@ -11,6 +11,7 @@ import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.componen
 import { ContactoComponent } from './contacto/contacto.component';
 import { RegistroPrestadorComponent } from './registro-prestador/registro-prestador.component';
 import { ButtonComponent } from './components/button/button.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ButtonComponent } from './components/button/button.component';
     SobreNosotrosComponent,
     ContactoComponent,
     RegistroPrestadorComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
