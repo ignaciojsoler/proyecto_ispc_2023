@@ -1,0 +1,157 @@
+<main>
+  <div class="registro" align="center">
+    <div class="registro__container">
+      <div class="logo">
+        <img src="./assets/img/logo-index.png" />
+      </div>
+      <h4 class="formulario_title">
+        <strong>Unite a nuestra comunidad ¡Registrate ahora!</strong>
+      </h4>
+      <br />
+      <h4>Seleccione su categoría:</h4>
+      <br />
+      <div>
+        <button
+          type="submit"
+          class="formulario__button m-2"
+          [ngClass]="{ 'selected': user_type === 'cliente' }"
+          (click)="setUserType('cliente')"
+        >
+          CLIENTE
+        </button>
+        <button
+          type="submit"
+          class="formulario__button m-2"
+          [ngClass]="{ 'selected': user_type === 'trabajador' }"
+          (click)="setUserType('trabajador')"
+        >
+          TRABAJADOR
+        </button>
+        <p class="warning" id="warning"></p>
+      </div>
+      <form class="formulario" id="form">
+        <label for="nombre" class="formulario__label">
+          <strong>NOMBRE</strong></label
+        >
+        <input
+          type="text"
+          placeholder="Ingresa un nombre"
+          name="name"
+          class="formulario__input"
+          id="nombre"
+        />
+
+        <label for="nombre" class="formulario__label">
+          <strong>APELLIDO</strong></label
+        >
+        <input
+          type="text"
+          placeholder="Ingresa un apellido"
+          name="apellido"
+          class="formulario__input"
+          id="nombre"
+        />
+
+        <label for="nombre" class="formulario__label">
+          <strong>CORREO ELECTRÓNICO</strong></label
+        >
+        <input
+          type="text"
+          placeholder="Ingresa tu e-mail"
+          name="nombre"
+          class="formulario__input"
+          id="email"
+        />
+        <label for="password" class="formulario__label">
+          <strong>CONTRASEÑA</strong></label
+        >
+        <input
+          type="password"
+          placeholder="Escribe tu contraseña"
+          name="password"
+          class="formulario__input"
+          id="pass"
+        />
+        <label for="password" class="formulario__label">
+          <strong>REPITE CONTRASEÑA</strong></label
+        >
+        <input
+          type="password"
+          placeholder="Repite tu contraseña"
+          name="password"
+          class="formulario__input"
+        />
+
+        <ng-container *ngIf="user_type === 'cliente'">
+            <label for="nombre" class="formulario__label">
+                <strong>DIRECCIÓN</strong></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresa una dirección"
+                name="name"
+                class="formulario__input"
+                id="nombre"
+              />
+
+              <label for="nombre" class="formulario__label">
+                <strong>CIUDAD</strong></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresa una ciudad"
+                name="name"
+                class="formulario__input"
+                id="nombre"
+              />
+
+              <label for="nombre" class="formulario__label">
+                <strong>PROVINCIA</strong></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresa una provincia"
+                name="name"
+                class="formulario__input"
+                id="nombre"
+              />
+
+              <label for="nombre" class="formulario__label">
+                <strong>PAÍS</strong></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresa un país"
+                name="name"
+                class="formulario__input"
+                id="nombre"
+              />
+        </ng-container>
+        <ng-container *ngIf="user_type === 'trabajador'">
+            <label for="nombre" class="formulario__label">
+                <strong>PROFESIÓN</strong></label
+              >
+              <input
+                type="text"
+                placeholder="Ingresa una profesión"
+                name="name"
+                class="formulario__input"
+                id="nombre"
+              />
+
+              <label for="nombre" class="formulario__label">
+                <strong>PRECIO POR HORA</strong></label
+              >
+              <input
+                type="number"
+                placeholder="Ingresa un precio por hora"
+                name="name"
+                class="formulario__input"
+                id="nombre"
+              />
+        </ng-container>
+        <button type="submit" class="formulario__button selected">REGISTRARSE</button>
+      </form>
+    </div>
+  </div>
+</main>

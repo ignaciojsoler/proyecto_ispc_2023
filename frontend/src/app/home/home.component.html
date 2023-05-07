@@ -1,1 +1,923 @@
-<p>home works!</p>
+<main>
+  <div class="banner start-0"></div>
+
+  <div class="central">
+    <div class="buscador__inicio">
+      <input class="inputBuscador" type="text" placeholder="Buscar Servicio" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        fill="currentColor"
+        class="bi bi-search"
+        viewBox="0 0 16 16"
+        type="submit"
+        onclick="buscarServicio()"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+        />
+      </svg>
+      <h5 style="text-align: center; font-size: 0.875rem; margin-top: 0.7rem">
+        Ingresa alguna de las categorías
+      </h5>
+    </div>
+
+    <h2 class="index">¡Bienvenido! ¿Qué estás buscando?</h2>
+
+    <div class="iconos__inicio container">
+      <div class="un-icono serv-todos" onclick="verTodos()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/todos.png"
+          alt="logo-Todos"
+        />
+        <h6 class="titulo-icon">Todos</h6>
+      </div>
+      <div class="un-icono" onclick="verElectricidad()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/enchufe.png"
+          alt="logo-Enchufe"
+        />
+        <h6 class="titulo-icon">Electricidad</h6>
+      </div>
+      <div class="un-icono" onclick="verGas()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/fuego.png"
+          alt="logo-Fuego"
+        />
+        <h6 class="titulo-icon">Gas</h6>
+      </div>
+      <div class="un-icono" onclick="verFontaneria()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/herramientas.png"
+          alt="logo-Herramientas"
+        />
+        <h6 class="titulo-icon">Fontanería</h6>
+      </div>
+      <div class="un-icono" onclick="verPintura()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/rodillo-de-pintura.png"
+          alt="logo-Pintura"
+        />
+        <h6 class="titulo-icon">Pintura</h6>
+      </div>
+      <div class="un-icono" onclick="verCarpinteria()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/serrucho.png"
+          alt="logo-Serrucho"
+        />
+        <h6 class="titulo-icon">Carpintería</h6>
+      </div>
+      <div class="un-icono" onclick="verAlbanileria()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/espatula.png"
+          alt="logo-Cuchara"
+        />
+        <h6 class="titulo-icon">Albañilería</h6>
+      </div>
+      <div class="un-icono" onclick="verJardin()">
+        <img
+          class="logo-servicio"
+          src="./assets/img/cortacesped.png"
+          alt="logo-Jardin"
+        />
+        <h6 class="titulo-icon">Jardín</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cartas container">
+    <div class="row">
+      <div class="carta-prestador col-md-6 col-xl-3 serv-electricidad serv-gas">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle photo"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Jose Villegas</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Electriciddad</a
+            >
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Gas</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-carpinteria">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Edgardo Poldi</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Carpintería</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-pintura">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Tadeo Gonzalez</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Pintura</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-electricidad">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Carlos Carbonelli</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Electricidad</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-gas serv-albanileria">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Luis Ponce</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Gas</a
+            >
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Albañilería</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-fontaneria">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Mauricio Paz</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Fontanería</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-gas">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Fabricio Liberto</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Gas</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-carpinteria">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Mario Cejas</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Carpintería</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-jardin">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Diego Quevedo</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Jardín</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-pintura">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Adrián López</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Pintura</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-jardin serv-pintura">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Mateo Ramirez</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Jardín</a
+            >
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Pintura</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+      <div class="carta-prestador col-md-6 col-xl-3 serv-fontaneria">
+        <div class="card m-b-30">
+          <div class="card-body row">
+            <div class="col-5">
+              <a href=""
+                ><img
+                  src="./assets/img/fotoPrestador.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-75"
+              /></a>
+            </div>
+            <div class="col-7 card-title align-self-center mb-0">
+              <h5>Paulo Rojo</h5>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Espacio reservado para una presentación breve del profesional.
+            </li>
+          </ul>
+          <div class="p-2">
+            <a
+              class="btn btn-sm btn-secondary disabled"
+              role="button"
+              aria-disabled="true"
+              >Fontanería</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="card-body d-flex justify-content-between">
+            <div class="ratings">
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star"></span></a>
+              <a href="#"><span class="fa fa-star-o"></span></a>
+            </div>
+            <div class="stars">
+              <ul class="social-links list-inline mb-0">
+                <li class="list-inline-item">
+                  <a
+                    title=""
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    class="tooltips"
+                    data-original-title="Share"
+                    ><i class="fa-solid fa-share-nodes"></i
+                  ></a>
+                </li>
+                <!-- <li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Info"><i class="fa-solid fa-info"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn contactar"
+            onclick="contactoPrestador()"
+            style="
+              --bs-btn-padding-y: 0.27rem;
+              --bs-btn-padding-x: 0.5rem;
+              --bs-btn-font-size: 0.75rem;
+            "
+          >
+            Contactar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
