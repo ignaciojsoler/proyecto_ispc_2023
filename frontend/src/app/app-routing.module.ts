@@ -5,7 +5,6 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroPrestadorComponent } from './registro-prestador/registro-prestador.component';
 import { HomeComponent } from './home/home.component';
-import { FrecuentesComponent } from './frecuentes/frecuentes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registro_prestador', component: RegistroPrestadorComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'frecuentes', component: FrecuentesComponent },
 ];
 
 @NgModule({
