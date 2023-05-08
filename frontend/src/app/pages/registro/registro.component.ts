@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -8,11 +9,16 @@ import { Component, Input } from '@angular/core';
 export class RegistroComponent {
   user_type: String | undefined;
 
-  constructor() {
+  constructor(private router: Router) {
     this.user_type = 'cliente';
   }
 
   setUserType(type: string) {
     this.user_type = type;
+  }
+
+  handleSubmit() {
+    this.router.navigate(this.user_type === 'cliente' ? ['/login'] : ['/pagos'])
+     
   }
 }
