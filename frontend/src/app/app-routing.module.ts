@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { FrecuentesComponent } from './frecuentes/frecuentes.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { TerminosYCondicionesComponent } from './terminos-y-condiciones/terminos-y-condiciones.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'frecuentes', component: FrecuentesComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'terminos_y_condiciones', component: TerminosYCondicionesComponent },
 ];
 
 @NgModule({
