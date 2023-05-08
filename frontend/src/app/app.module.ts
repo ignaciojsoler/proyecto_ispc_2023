@@ -14,6 +14,7 @@ import { FrecuentesComponent } from './frecuentes/frecuentes.component';
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { SoporteComponent } from './soporte/soporte.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RegistroComponent } from './pages/registro/registro.component';
     FrecuentesComponent,
     ButtonComponent,
     InputComponent,
-    RegistroComponent
+    RegistroComponent,
+    SoporteComponent
   ],
   imports: [
     BrowserModule,
