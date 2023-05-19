@@ -15,6 +15,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
+import { SoporteComponent } from './soporte/soporte.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PagosComponent } from './pages/pagos/pagos.component';
     ButtonComponent,
     InputComponent,
     RegistroComponent,
-    PagosComponent
+    PagosComponent,
+    SoporteComponent
   ],
   imports: [
     BrowserModule,
