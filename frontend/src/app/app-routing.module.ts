@@ -8,6 +8,7 @@ import { FrecuentesComponent } from './frecuentes/frecuentes.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
 import { SoporteComponent } from './soporte/soporte.component';
+import { DatosPrestadorComponent } from './datos-prestador/datos-prestador.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'pagos', component: PagosComponent },
   { path: 'soporte', component: SoporteComponent},
+  { path: 'datos-prestador', component: DatosPrestadorComponent},
 ];
 
 @NgModule({

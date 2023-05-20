@@ -16,6 +16,7 @@ import { InputComponent } from './components/input/input.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
 import { SoporteComponent } from './soporte/soporte.component';
+import { DatosPrestadorComponent } from './datos-prestador/datos-prestador.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SoporteComponent } from './soporte/soporte.component';
     InputComponent,
     RegistroComponent,
     PagosComponent,
-    SoporteComponent
+    SoporteComponent,
+    DatosPrestadorComponent
   ],
   imports: [
     BrowserModule,
