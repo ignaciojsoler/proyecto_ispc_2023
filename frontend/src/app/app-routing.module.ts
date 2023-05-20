@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
-import { FrecuentesComponent } from './frecuentes/frecuentes.component';
+import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { LoginComponent } from './pages/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FrecuentesComponent } from './pages/frecuentes/frecuentes.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
-import { SoporteComponent } from './soporte/soporte.component';
-import { DatosPrestadorComponent } from './datos-prestador/datos-prestador.component';
+import { SoporteComponent } from './pages/soporte/soporte.component';
+import { DatosPrestadorComponent } from './pages/datos-prestador/datos-prestador.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
