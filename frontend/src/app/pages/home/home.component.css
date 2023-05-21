@@ -1,0 +1,87 @@
+main {
+  background-color: var(--main-white);
+  padding-bottom: 3em;
+}
+
+/* BANNER */
+.banner {
+  height: 360px;
+  background: url("/assets/img/banner.png") no-repeat center / cover;
+  margin-top: 30px;
+}
+
+/* CATEGORÍAS */
+.central {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.iconos__inicio {
+  display: flex;
+  justify-content: center;
+  height: 7.5em;
+  margin: 1rem 0;
+}
+
+.un-icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+
+.logo-servicio {
+  width: 50px;
+  height: 50px;
+  margin: 1.5em;
+}
+
+.logo-servicio:hover {
+  height: 55px;
+  width: 55px;
+}
+
+.central {
+  margin-bottom: 50px;
+}
+
+h2.index{
+  font-weight: 600;
+}
+
+div.texto {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oculto {
+  display: none;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .banner {
+    height: 200px;
+  }
+  .iconos__inicio {
+    scale: 85%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }

@@ -1,0 +1,35 @@
+Instalación de Django:
+
+Ejecuta el siguiente comando en la consola: pip install django
+Creación del proyecto Django:
+
+Navega a la carpeta donde deseas crear el proyecto.
+Ejecuta el siguiente comando en la consola: django-admin startproject nombre_proyecto
+Creación de la aplicación Django:
+
+Navega a la carpeta raíz del proyecto (la que contiene el archivo manage.py).
+Ejecuta el siguiente comando en la consola: python manage.py startapp nombre_aplicacion
+Definición de los modelos:
+
+Abre el archivo models.py dentro de la aplicación que has creado.
+Define los modelos de Django según tus requerimientos. Puedes basarte en los ejemplos que te proporcioné anteriormente.
+Guarda el archivo.
+Ejecución de las migraciones:
+
+En la consola, asegúrate de estar ubicado en la carpeta raíz del proyecto (la que contiene el archivo manage.py).
+Ejecuta el siguiente comando en la consola: python manage.py makemigrations
+Luego, ejecuta el siguiente comando en la consola: python manage.py migrate
+Creación del superusuario:
+
+Ejecuta el siguiente comando en la consola: python manage.py createsuperuser
+Sigue las instrucciones en la consola para ingresar un nombre de usuario, dirección de correo electrónico y contraseña para el superusuario.
+Configuración del archivo admin.py:
+
+Abre el archivo admin.py dentro de la aplicación que has creado.
+Agrega las líneas de código necesarias para registrar tus modelos en el panel de administración y personalizar la visualización de los registros, como se muestra en el ejemplo anterior.
+Guarda el archivo.
+Ejecución del servidor de desarrollo:
+
+En la consola, asegúrate de estar ubicado en la carpeta raíz del proyecto (la que contiene el archivo manage.py).
+Ejecuta el siguiente comando en la consola: python manage.py runserver
+El servidor de desarrollo se iniciará y podrás acceder a tu aplicación a través de la URL proporcionada en la consola.
