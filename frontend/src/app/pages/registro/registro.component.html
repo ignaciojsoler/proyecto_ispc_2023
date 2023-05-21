@@ -11,7 +11,7 @@
       <h4>Seleccione su categoría:</h4>
       <br />
       <div>
-        <!-- <app-button
+        <app-button
           type="submit"
           class="formulario__button m-2"
           [ngClass]="{ 'selected': user_type === 'cliente' }"
@@ -26,7 +26,7 @@
           (click)="setUserType('trabajador')"
         >
           TRABAJADOR
-        </app-button> -->
+        </app-button>
         <p class="warning" id="warning"></p>
       </div>
       <form class="formulario" id="form" (submit)="handleSubmit()">
