@@ -6,29 +6,11 @@ main {
 /* BANNER */
 .banner {
   height: 360px;
-  background: url("../../assets/img/banner.png") no-repeat center / cover;
+  background: url("/assets/img/banner.png") no-repeat center / cover;
   margin-top: 30px;
 }
 
-/* BUSCADOR */
-.buscador__inicio {
-  margin-bottom: 25px;
-}
-
-.inputBuscador {
-  background-color: #e5e5fd;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.063rem;
-  border-radius: 50px;
-  margin-left: 0.5rem;
-  width: 20rem;
-}
-
-.bi-search {
-  margin-left: -12%;
-}
-
+/* CATEGORÍAS */
 .central {
   margin-top: 3rem;
   display: flex;
