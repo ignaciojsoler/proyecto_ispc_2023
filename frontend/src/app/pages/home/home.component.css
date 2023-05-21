@@ -65,52 +65,7 @@ div.texto {
   display: none;
 }
 
-/* CARDS */
-.card {
-  margin-top:20px;
-  border: none;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
-  margin-bottom: 30px;
-  background-color: white;
-}
 
-.btn {
-  margin-left: 5px;
-  color: var(--main-white);
-}
-
-.btn.contactar {
-  margin-left: 5px;
-  background: var(--main-blue); 
-  color: var(--main-white); 
-}
-
-.photo {
-  width: 75%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px;
-  font-weight: 600;
-}
-
-.social-links li a {
-  -webkit-border-radius: 50%;
-  background-color: var(--main-blue);
-  border-radius: 50%;
-  color: var(--main-white);
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  width: 30px;
-  font-size: 12px;
-}
-
-a {
-  color: var(--main-light-orange);
-}
 
 /* MEDIA QUERIES */
 
