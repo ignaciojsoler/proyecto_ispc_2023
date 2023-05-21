@@ -1,0 +1,147 @@
+{
+    "data": [
+      {
+        "user.id": 1,
+        "email": "jose@gas.in",
+        "telefono": "0303456",
+        "nombre": "Jose",
+        "apellido": "Villegas",
+        "profesion": "Gasista, Albañil",
+        "matricula": "5625",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 2,
+        "email": "edgardo@capintero.in",
+        "telefono": "0303456",
+        "nombre": "Edgardo",
+        "apellido": "Poldi",
+        "profesion": "Carpintero",
+        "matricula": "2586",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/3-image.jpg"
+      },
+
+      {
+        "user.id": 3,
+        "email": "tadeo@jardineria.in",
+        "telefono": "0303456",
+        "nombre": "Tadeo",
+        "apellido": "Gonzalez",
+        "profesion": "Jardinero",
+        "matricula": "458",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/4-image.jpg"
+      },
+
+      {
+        "user.id": 4,
+        "email": "carlos@electricidad.in",
+        "telefono": "0303456",
+        "nombre": "Carlos",
+        "apellido": "Carbonelli",
+        "profesion": "Electricista",
+        "matricula": "9632",
+        "rating": "",
+        "imagen": "img/assets/fotoPrestador.jpg"
+      },
+
+      {
+        "user.id": 5,
+        "email": "luis@albañil.in",
+        "telefono": "0303456",
+        "nombre": "Luis",
+        "apellido": "Ponce",
+        "profesion": "Albañil",
+        "matricula": "35861",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 6,
+        "email": "Mauricio@plomeria.in",
+        "telefono": "0303456",
+        "nombre": "Mauricio",
+        "apellido": "Paz",
+        "profesion": "Plomero",
+        "matricula": "7852",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 7,
+        "email": "fabricio@gas.in",
+        "telefono": "0303456",
+        "nombre": "Fabricio",
+        "apellido": "Liberto",
+        "profesion": "Gasista",
+        "matricula": "1572",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 8,
+        "email": "mario@electricidad.in",
+        "telefono": "0303456",
+        "nombre": "Mario",
+        "apellido": "Cejas",
+        "profesion": "Electricista",
+        "matricula": "7852",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 9,
+        "email": "diego@pintor.in",
+        "telefono": "0303456",
+        "nombre": "Diego",
+        "apellido": "Quevedo",
+        "profesion": "Pintor",
+        "matricula": "6547",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 10,
+        "email": "Adrián@pintor.in",
+        "telefono": "0303456",
+        "nombre": "Adrián",
+        "apellido": "López",
+        "profesion": "Albañil, Pintor",
+        "matricula": "1236",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 11,
+        "email": "mateo@electricidad.in",
+        "telefono": "0303456",
+        "nombre": "Mateo",
+        "apellido": "Ramírez",
+        "profesion": "Electricista",
+        "matricula": "4565",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      },
+
+      {
+        "user.id": 12,
+        "email": "Pauloh@plomeria.in",
+        "telefono": "0303456",
+        "nombre": "Paulo",
+        "apellido": "Rojo",
+        "profesion": "Plomero",
+        "matricula": "21546",
+        "rating": "",
+        "imagen": "https://reqres.in/img/faces/2-image.jpg"
+      }
+    ]
+  }
