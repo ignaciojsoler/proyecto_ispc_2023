@@ -11,6 +11,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { SoporteComponent } from './soporte/soporte.component';
 import { ComponentsModule } from '../components/components.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [ 
@@ -24,7 +25,7 @@ import { ComponentsModule } from '../components/components.module';
     SobreNosotrosComponent,
     SoporteComponent
   ],
-  imports: [ ComponentsModule, AppRoutingModule ],
+  imports: [ ComponentsModule, AppRoutingModule, CommonModule ],
   exports: [
     ContactoComponent,
     DatosPrestadorComponent,
