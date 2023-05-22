@@ -6,7 +6,7 @@
         "telefono": "0303456",
         "nombre": "Jose",
         "apellido": "Villegas",
-        "profesion": "Gasista, Albañil",
+        "profesion": ["Gasista", "Albañil"],
         "matricula": "5625",
         "ranking": "2",
         "imagen": "https://reqres.in/img/faces/2-image.jpg"
@@ -114,7 +114,7 @@
         "telefono": "0303456",
         "nombre": "Adrián",
         "apellido": "López",
-        "profesion": "Albañil, Pintor",
+        "profesion": ["Albañil", "Pintor"],
         "matricula": "1236",
         "ranking": "3",
         "imagen": "https://reqres.in/img/faces/2-image.jpg"
