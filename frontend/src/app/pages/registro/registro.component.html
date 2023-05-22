@@ -1,6 +1,6 @@
 <main>
-  <div class="registro">
-    <div class="registro__container text-center">
+  <div class="registro" align="center">
+    <div class="registro__container">
       <div class="logo">
         <img src="/assets/img/logo-index.png" />
       </div>
@@ -11,22 +11,22 @@
       <h4>Seleccione su categoría:</h4>
       <br />
       <div>
-        <app-button
+        <button
           type="submit"
           class="formulario__button m-2"
           [ngClass]="{ 'selected': user_type === 'cliente' }"
           (click)="setUserType('cliente')"
         >
           CLIENTE
-        </app-button>
-        <app-button
+        </button>
+        <button
           type="submit"
           class="formulario__button m-2"
           [ngClass]="{ 'selected': user_type === 'trabajador' }"
           (click)="setUserType('trabajador')"
         >
           TRABAJADOR
-        </app-button>
+        </button>
         <p class="warning" id="warning"></p>
       </div>
       <form class="formulario" id="form" (submit)="handleSubmit()">
