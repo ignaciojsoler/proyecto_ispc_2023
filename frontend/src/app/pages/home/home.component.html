@@ -76,10 +76,12 @@
 
   <!-- Cards -->
   <div class="cartas container">
-    <div class="row">
-      <li *ngFor="let profesional of profesionales">
-        {{profesional.nombre}}
-      </li>
+    <div class="row" *ngFor="let profesional of profesionales">
+        <app-card-prestador
+        [nombre]="profesional.nombre"
+        [apellido]="profesional.apellido"
+        [descripcion]="profesional.descripcion"
+        />
     </div>
   </div>
 </main>
