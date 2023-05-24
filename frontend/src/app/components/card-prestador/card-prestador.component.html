@@ -1,75 +1,75 @@
-<div *ngIf="mostrarDatosCards">
-  <div *ngFor="let element of trabajadores"> 
-    <div  class="card m-b-30">
-      <div class="card-body row">
-        <div class="col-5">
-          <a href=""
-            ><img
-              src="/assets/img/fotoPrestador.jpg"
-              alt=""
-              class="img-fluid rounded-circle photo"
-          /></a>
+<!-- <p>card-prestador works!</p> -->
+
+<div>
+      <div class="card m-b-30">
+        <div class="card-body row">
+          <div class="col-5">
+            <a href=""
+              ><img
+                src="/assets/img/fotoPrestador.jpg"
+                alt=""
+                class="img-fluid rounded-circle photo"
+            /></a>
+          </div>
+          <div class="col-7 card-title align-self-center mb-0">
+            <h5>Jose Villegas</h5>
+          </div>
         </div>
-        <div class="col-7 card-title align-self-center mb-0">
-          <h5>{{ trabajadores.nombre }}  {{ trabajadores.apellido }}</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            Espacio reservado para una presentación breve del profesional.
+          </li>
+        </ul>
+        <div class="p-2">
+          <a
+            class="btn btn-sm btn-secondary disabled"
+            role="button"
+            aria-disabled="true"
+            >Electriciddad</a
+          >
+          <a
+            class="btn btn-sm btn-secondary disabled"
+            role="button"
+            aria-disabled="true"
+            >Gas</a
+          >
         </div>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          Espacio reservado para una presentación breve del profesional.
-        </li>
-      </ul>
-      <div class="p-2">
+        <hr class="solid" />
+        <div class="card-body d-flex justify-content-between">
+          <div class="ratings">
+            <a>4.0 </a>
+            <a href="#"><span class="fa fa-star"></span></a>
+            <a href="#"><span class="fa fa-star"></span></a>
+            <a href="#"><span class="fa fa-star"></span></a>
+            <a href="#"><span class="fa fa-star"></span></a>
+            <a href="#"><span class="fa fa-star-o"></span></a>
+          </div>
+          <div class="stars">
+            <ul class="social-links list-inline mb-0">
+              <li class="list-inline-item">
+                <a
+                  title=""
+                  data-placement="top"
+                  data-toggle="tooltip"
+                  class="tooltips"
+                  data-original-title="Share"
+                  ><i class="fa-solid fa-share-nodes"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <a
-          class="btn btn-sm btn-secondary disabled"
-          role="button"
-          aria-disabled="true"
-          >Electriciddad</a
+          type="button"
+          class="btn contactar"
+          routerLink="/datos-prestador"
+          style="
+            --bs-btn-padding-y: 0.27rem;
+            --bs-btn-padding-x: 0.5rem;
+            --bs-btn-font-size: 0.75rem;
+          "
         >
-        <a
-          class="btn btn-sm btn-secondary disabled"
-          role="button"
-          aria-disabled="true"
-          >Gas</a
-        >
+          Contactar
+        </a>
       </div>
-      <hr class="solid" />
-      <div class="card-body d-flex justify-content-between">
-        <div class="ratings">
-          <a>4.0 </a>
-          <a href="#"><span class="fa fa-star"></span></a>
-          <a href="#"><span class="fa fa-star"></span></a>
-          <a href="#"><span class="fa fa-star"></span></a>
-          <a href="#"><span class="fa fa-star"></span></a>
-          <a href="#"><span class="fa fa-star-o"></span></a>
-        </div>
-        <div class="stars">
-          <ul class="social-links list-inline mb-0">
-            <li class="list-inline-item">
-              <a
-                title=""
-                data-placement="top"
-                data-toggle="tooltip"
-                class="tooltips"
-                data-original-title="Share"
-                ><i class="fa-solid fa-share-nodes"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a
-        type="button"
-        class="btn contactar"
-        routerLink="/datos-prestador"
-        style="
-          --bs-btn-padding-y: 0.27rem;
-          --bs-btn-padding-x: 0.5rem;
-          --bs-btn-font-size: 0.75rem;
-        "
-      >
-        Contactar
-      </a>
-    </div>
-  </div>
 </div>
