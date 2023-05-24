@@ -1,12 +1,16 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
+
 export class ProfesionalService {
-  constructor(private http: HttpClient) {}
-  obtener() {
-    return this.http.get('https://randomuser.me/api/');
+  url:String="http://localhostt:3000/";
+  constructor (private http:HttpClient) {}
+
+  obtenerDatosProfesionales(): Observable <any> {
+    return this.http.get(this.url+ "trabajadores");
   }
 }
