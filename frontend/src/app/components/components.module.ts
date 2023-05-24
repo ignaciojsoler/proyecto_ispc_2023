@@ -3,14 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
-import { CardPrestadorComponent } from './card-prestador/card-prestador.component';
 
 @NgModule({
-  declarations: [ ButtonComponent, InputComponent, CardPrestadorComponent ],
+  declarations: [ ButtonComponent, InputComponent ],
   imports: [
     CommonModule
   ],
-  exports: [ ButtonComponent, InputComponent, CardPrestadorComponent ],
+  exports: [ ButtonComponent, InputComponent ],
 })
 
 export class ComponentsModule { }
