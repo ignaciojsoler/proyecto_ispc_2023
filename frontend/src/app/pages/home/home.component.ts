@@ -7,14 +7,18 @@ import { ProfesionalService } from 'src/app/services/profesional.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  profecionales: any;
-  constructor(private profecionalesServices: ProfesionalService) {}
+  profesionales: any;
+
+  constructor(private profesionalService: ProfesionalService) {}
+
   ngOnInit(): void {
-    this.recuperarProfecionales();
+    this.recuperarProfesionales();
   }
-  recuperarProfecionales() {
-    this.profecionalesServices
-      .obtener()
-      .subscribe((resultado) => (this.profecionales = resultado));
+
+  recuperarProfesionales() {
+    this.profesionalService.obtener().subscribe((resultado) => {
+      console.log(resultado);
+      this.profesionales = resultado;
+    });
   }
 }

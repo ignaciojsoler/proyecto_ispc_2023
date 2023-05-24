@@ -7,6 +7,6 @@ import { Injectable } from '@angular/core';
 export class ProfesionalService {
   constructor(private http: HttpClient) {}
   obtener() {
-    return this.http.get('https://randomuser.me/api/');
+    return this.http.get('http://localhost:3000/trabajadores');
   }
 }

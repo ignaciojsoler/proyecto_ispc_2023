@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from '../app-routing.module';
+import { CommonModule } from '@angular/common';
 
 import { ContactoComponent } from './contacto/contacto.component';
 import { DatosPrestadorComponent } from './datos-prestador/datos-prestador.component';
@@ -24,7 +25,7 @@ import { ComponentsModule } from '../components/components.module';
     SobreNosotrosComponent,
     SoporteComponent
   ],
-  imports: [ ComponentsModule, AppRoutingModule ],
+  imports: [ ComponentsModule, AppRoutingModule, CommonModule ],
   exports: [
     ContactoComponent,
     DatosPrestadorComponent,
