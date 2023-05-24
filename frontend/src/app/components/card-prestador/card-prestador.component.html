@@ -1,11 +1,10 @@
-<div class="carta-prestador col-md-6 col-xl-3">
-  <div>
+<div>
     <div  class="card m-b-30">
       <div class="card-body row">
         <div class="col-5">
           <a href=""
             ><img
-              src="/assets/img/fotoPrestador.jpg"
+              src="{{ imagen }}"
               alt=""
               class="img-fluid rounded-circle photo"
           /></a>
@@ -16,27 +15,24 @@
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          {{descripcion}}
+          {{ descripcion }}
         </li>
       </ul>
       <div class="p-2">
         <a
+          *ngFor="let element of profesion"
           class="btn btn-sm btn-secondary disabled"
           role="button"
           aria-disabled="true"
-          >Electriciddad</a
+          >{{ element }}</a
         >
-        <a
-          class="btn btn-sm btn-secondary disabled"
-          role="button"
-          aria-disabled="true"
-          >Gas</a
-        >
+        
+        
       </div>
       <hr class="solid" />
       <div class="card-body d-flex justify-content-between">
         <div class="ratings">
-          <a>4.0 </a>
+          <a>{{ ranking }} </a>
           <a href="#"><span class="fa fa-star"></span></a>
           <a href="#"><span class="fa fa-star"></span></a>
           <a href="#"><span class="fa fa-star"></span></a>
@@ -71,5 +67,4 @@
         Contactar
       </a>
     </div>
-  </div>
   </div>

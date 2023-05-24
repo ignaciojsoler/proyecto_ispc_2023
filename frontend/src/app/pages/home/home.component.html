@@ -76,12 +76,18 @@
 
   <!-- Cards -->
   <div class="cartas container">
-    <div class="row" *ngFor="let profesional of profesionales">
+    <div class="row">
+      <div class="col-md-6 col-xl-3" *ngFor="let profesional of profesionales">
         <app-card-prestador
-        [nombre]="profesional.nombre"
-        [apellido]="profesional.apellido"
-        [descripcion]="profesional.descripcion"
+          [imagen]="profesional.imagen"
+          [nombre]="profesional.nombre"
+          [apellido]="profesional.apellido"
+          [descripcion]="profesional.descripcion"
+          [profesion]="profesional.profesion"
+          [ranking]="profesional.ranking"
         />
+      </div>
     </div>
+    
   </div>
 </main>
