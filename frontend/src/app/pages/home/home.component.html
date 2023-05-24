@@ -1,0 +1,93 @@
+<main>
+  <!-- Banner -->
+  <div class="banner start-0"></div>
+
+  <div class="central">
+    <h2 class="index">¡Bienvenido! ¿Qué estás buscando?</h2>
+
+    <!-- Categorías -->
+    <div class="iconos__inicio container">
+      <div class="un-icono serv-todos" onclick="verTodos()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/todos.png"
+          alt="logo-Todos"
+        />
+        <h6 class="titulo-icon">Todos</h6>
+      </div>
+      <div class="un-icono" onclick="verElectricidad()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/enchufe.png"
+          alt="logo-Enchufe"
+        />
+        <h6 class="titulo-icon">Electricidad</h6>
+      </div>
+      <div class="un-icono" onclick="verGas()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/fuego.png"
+          alt="logo-Fuego"
+        />
+        <h6 class="titulo-icon">Gas</h6>
+      </div>
+      <div class="un-icono" onclick="verFontaneria()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/herramientas.png"
+          alt="logo-Herramientas"
+        />
+        <h6 class="titulo-icon">Fontanería</h6>
+      </div>
+      <div class="un-icono" onclick="verPintura()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/rodillo-de-pintura.png"
+          alt="logo-Pintura"
+        />
+        <h6 class="titulo-icon">Pintura</h6>
+      </div>
+      <div class="un-icono" onclick="verCarpinteria()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/serrucho.png"
+          alt="logo-Serrucho"
+        />
+        <h6 class="titulo-icon">Carpintería</h6>
+      </div>
+      <div class="un-icono" onclick="verAlbanileria()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/espatula.png"
+          alt="logo-Cuchara"
+        />
+        <h6 class="titulo-icon">Albañilería</h6>
+      </div>
+      <div class="un-icono" onclick="verJardin()">
+        <img
+          class="logo-servicio"
+          src="/assets/img/cortacesped.png"
+          alt="logo-Jardin"
+        />
+        <h6 class="titulo-icon">Jardín</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cartas container">
+    <div class="row">
+      <div class="col-md-6 col-xl-3" *ngFor="let profesional of profesionales">
+        <app-card-prestador
+          [imagen]="profesional.imagen"
+          [nombre]="profesional.nombre"
+          [apellido]="profesional.apellido"
+          [descripcion]="profesional.descripcion"
+          [profesion]="profesional.profesion"
+          [ranking]="profesional.ranking"
+        />
+      </div>
+    </div>
+    
+  </div>
+</main>
