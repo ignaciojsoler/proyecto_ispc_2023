@@ -42,13 +42,13 @@
         />
 
         <div class="alert alert-danger" [hidden]="password.valid || password.pristine">
-          <span *ngIf="password.errors?.['required']">
+         <span *ngIf="password.errors?.['required']">
           La contraseña es obligatoria
-        </span>
+         </span>
 
-        <span *ngIf="password.errors?.['minLength']">
+         <span *ngIf="password.errors?.['minLenght(8)']">
           La contraseña debe ser válida
-        </span>
+         </span>
 
         </div>
         <div class="formulario__captions">
