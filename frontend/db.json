@@ -1,4 +1,17 @@
 {
+  "categorias": [
+    { 
+      "todos": 1,
+      "electricidad": 2, 
+      "gas": 3, 
+      "fontaneria": 4,
+      "pintura": 5, 
+      "carpinteria": 6,
+      "albanieria": 7,
+      "jardineria": 8
+    }
+  ],
+
   "trabajadores": [
     {
       "id_trabajador": 1,
