@@ -47,7 +47,7 @@ class Trabajador(models.Model):
     direccion = models.CharField(max_length=100)
     ciudad = models.CharField(max_length=100)
     provincia = models.CharField(max_length=100)
-    matricula = models.IntegerField(max_length=20)
+    matricula = models.CharField(max_length=20)
     rating = models.DecimalField(max_digits=1, decimal_places=1)
     imagen = models.ImageField(blank=True, null=True)
     precio_hora = models.DecimalField(max_digits=8, decimal_places=2)
