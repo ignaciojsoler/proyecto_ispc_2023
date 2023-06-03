@@ -12,6 +12,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { SoporteComponent } from './soporte/soporte.component';
 import { ComponentsModule } from '../components/components.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [ 
@@ -23,7 +24,8 @@ import { ComponentsModule } from '../components/components.module';
     PagosComponent,
     RegistroComponent,
     SobreNosotrosComponent,
-    SoporteComponent
+    SoporteComponent,
+    DashboardComponent
   ],
   imports: [ ComponentsModule, AppRoutingModule, CommonModule ],
   exports: [
