@@ -50,13 +50,15 @@
           <strong>APELLIDO</strong></label
         >
         <input
-          type="text"
+          type="text" [formControl]="surname"
           placeholder="Ingresa un apellido"
           name="apellido"
           class="formulario__input"
           id="nombre"
         />
-
+        <div class="alert alert.danger mt-1" [hidden]="surname.valid || surname.pristine">
+          El apellido es obligatorio
+        </div>
         <label for="nombre" class="formulario__label">
           <strong>CORREO ELECTRÓNICO</strong></label
         >
@@ -165,40 +167,51 @@
                 <strong>PAÍS</strong></label
               >
               <input
-                type="text"
+                type="text" [formControl]="country"
                 placeholder="Ingresa un país"
                 name="name"
                 class="formulario__input"
                 id="nombre"
               />
+              <div class="alert alert.danger mt-1" [hidden]="country.valid || country.pristine">
+                El país es obligatorio
+              </div>
+
+
         </ng-container>
         <ng-container *ngIf="user_type === 'trabajador'">
             <label for="nombre" class="formulario__label">
                 <strong>PROFESIÓN</strong></label
               >
               <input
-                type="text"
+                type="text" [formControl]="profession"
                 placeholder="Ingresa una profesión"
                 name="name"
                 class="formulario__input"
                 id="nombre"
               />
 
+              <div class="alert alert.danger mt-1" [hidden]="profession.valid || profession.pristine">
+                La profesión es obligatoria
+              </div>
+
               <label for="nombre" class="formulario__label">
                 <strong>PRECIO POR HORA</strong></label
               >
               <input
-                type="number"
+                type="number" [formControl]="priceperhour"
                 placeholder="Ingresa un precio por hora"
                 name="name"
                 class="formulario__input"
                 id="nombre"
               />
+
+              <div class="alert alert.danger mt-1" [hidden]="priceperhour.valid || priceperhour.pristine">
+                El precio por hora es obligatorio
+              </div>
         </ng-container>
         <button type="submit" class="formulario__button selected">REGISTRARSE</button>
       </form>
     </div>
   </div>
 </main>
-
-{{ email.errors | json }}
