@@ -97,7 +97,7 @@
         </div>
 
         <label for="password" class="formulario__label">
-          <strong>REPITE CONTRASEÑA</strong></label
+          <strong>CONFIRMA CONTRASEÑA</strong></label
         >
         <input
           type="password" [formControl]="password"
@@ -106,12 +106,12 @@
           class="formulario__input"
         />
 
-        <div class="alert alert.danger mt-1" [hidden]="password.valid || password.pristine">
-          <span *ngIf="password?.hasError('required')">
-            La contraseña es obligatorio
+        <div class="alert alert.danger mt-1" [hidden]="repeatpassword.valid || repeatpassword.pristine">
+          <span *ngIf="repeatpassword?.hasError('rerequired')">
+           Repetir la contraseña es obligatorio
           </span>
           <br>
-          <span *ngIf="password?.errors">
+          <span *ngIf="repeatpassword?.hasError('minlength')">
             La contraseña debe tener 8 (ocho) o más caracteres
           </span>
         </div>
@@ -122,34 +122,44 @@
                 <strong>DIRECCIÓN</strong></label
               >
               <input
-                type="text"
+                type="text" [formControl]="address"
                 placeholder="Ingresa una dirección"
                 name="name"
                 class="formulario__input"
                 id="nombre"
               />
+              <div class="alert alert.danger mt-1" [hidden]="address.valid || address.pristine">
+                La dirección es obligatorio
+              </div>
 
               <label for="nombre" class="formulario__label">
                 <strong>CIUDAD</strong></label
               >
               <input
-                type="text"
+                type="text" [formControl]="city"
                 placeholder="Ingresa una ciudad"
                 name="name"
                 class="formulario__input"
                 id="nombre"
               />
+              <div class="alert alert.danger mt-1" [hidden]="city.valid || city.pristine">
+                La ciudad es obligatoria
+              </div>
+
 
               <label for="nombre" class="formulario__label">
                 <strong>PROVINCIA</strong></label
               >
               <input
-                type="text"
+                type="text" [formControl]="province"
                 placeholder="Ingresa una provincia"
                 name="name"
                 class="formulario__input"
                 id="nombre"
               />
+              <div class="alert alert.danger mt-1" [hidden]="province.valid || province.pristine">
+                La provincia es obligatoria
+              </div>
 
               <label for="nombre" class="formulario__label">
                 <strong>PAÍS</strong></label
