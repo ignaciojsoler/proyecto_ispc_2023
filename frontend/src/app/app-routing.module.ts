@@ -10,6 +10,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
 import { SoporteComponent } from './pages/soporte/soporte.component';
 import { DatosPrestadorComponent } from './pages/datos-prestador/datos-prestador.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,8 +21,9 @@ const routes: Routes = [
   { path: 'frecuentes', component: FrecuentesComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'pagos', component: PagosComponent },
-  { path: 'soporte', component: SoporteComponent},
-  { path: 'datos-prestador', component: DatosPrestadorComponent},
+  { path: 'soporte', component: SoporteComponent },
+  { path: 'datos-prestador', component: DatosPrestadorComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({

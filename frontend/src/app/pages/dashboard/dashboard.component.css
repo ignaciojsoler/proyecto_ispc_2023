@@ -1,5 +1,4 @@
-body {
-  margin-top: 20px;
+main {
   background: #eee;
 }
 .card {
@@ -8,7 +7,7 @@ body {
 .avatar.sm {
   width: 2.25rem;
   height: 2.25rem;
-  font-size: 0.818125rem;
+  font-size: 0.625rem;
 }
 .table-nowrap .table td,
 .table-nowrap .table th {

@@ -37,7 +37,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     PagosComponent,
     RegistroComponent,
     SobreNosotrosComponent,
-    SoporteComponent
+    SoporteComponent,
+    DashboardComponent
   ],
 })
 
