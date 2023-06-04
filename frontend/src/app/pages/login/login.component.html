@@ -38,16 +38,16 @@
           name="password" [formControl]="password"
           class="formulario__input-password"
           type="password" 
-          placeholder="Contraseña"
+          placeholder="Escribe tu contraseña"
         />
 
         <div class="alert alert-danger" [hidden]="password.valid || password.pristine">
-         <span *ngIf="password.errors?.['required']">
+         <span *ngIf="password?.hasError('required')">
           La contraseña es obligatoria
          </span>
-
-         <span *ngIf="password.errors?.['minLenght(8)']">
-          La contraseña debe ser válida
+         <br>
+         <span *ngIf="password?.errors">
+          La contraseña debe tener 8 (ocho) caracteres
          </span>
 
         </div>
