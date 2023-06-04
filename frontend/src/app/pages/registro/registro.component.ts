@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
@@ -7,6 +8,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
+
+  name = new FormControl ('', Validators.required);
+  /*surname = new FormControl ('');*/
+  email = new FormControl('', [Validators.required, Validators.email]);
+  /*
+  password = new FormControl ('');
+  address = new FormControl ('');
+  city = new FormControl ('');
+  province = new FormControl ('');
+  country = new FormControl ('');
+  profession = new FormControl ('');
+  priceperhour = new FormControl ('');
+  */
+
+
+  
+
   user_type: String | undefined;
 
   constructor(private router: Router) {
