@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormControl, Validators} from '@angular/forms';
+import { FormControl, MinLengthValidator, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
@@ -12,8 +12,8 @@ export class RegistroComponent {
   name = new FormControl ('', Validators.required);
   /*surname = new FormControl ('');*/
   email = new FormControl('', [Validators.required, Validators.email]);
+  password = new FormControl ('', [Validators.required, Validators.minLength(8)],);
   /*
-  password = new FormControl ('');
   address = new FormControl ('');
   city = new FormControl ('');
   province = new FormControl ('');

@@ -80,21 +80,42 @@
           <strong>CONTRASEÑA</strong></label
         >
         <input
-          type="password"
+          type="password" [formControl]="password"
           placeholder="Escribe tu contraseña"
           name="password"
           class="formulario__input"
           id="pass"
         />
+        <div class="alert alert.danger mt-1" [hidden]="password.valid || password.pristine">
+          <span *ngIf="password?.hasError('required')">
+            La contraseña es obligatorio
+          </span>
+          <br>
+          <span *ngIf="password?.errors">
+            La contraseña debe tener 8 (ocho) o más caracteres
+          </span>
+        </div>
+
         <label for="password" class="formulario__label">
           <strong>REPITE CONTRASEÑA</strong></label
         >
         <input
-          type="password"
+          type="password" [formControl]="password"
           placeholder="Repite tu contraseña"
           name="password"
           class="formulario__input"
         />
+
+        <div class="alert alert.danger mt-1" [hidden]="password.valid || password.pristine">
+          <span *ngIf="password?.hasError('required')">
+            La contraseña es obligatorio
+          </span>
+          <br>
+          <span *ngIf="password?.errors">
+            La contraseña debe tener 8 (ocho) o más caracteres
+          </span>
+        </div>
+
 
         <ng-container *ngIf="user_type === 'cliente'">
             <label for="nombre" class="formulario__label">
