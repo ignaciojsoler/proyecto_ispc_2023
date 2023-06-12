@@ -14,6 +14,7 @@ import { SoporteComponent } from './soporte/soporte.component';
 import { ComponentsModule } from '../components/components.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardUserComponent } from './dashboard-user/dashboard-user.component';
 
 @NgModule({
   declarations: [ 
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RegistroComponent,
     SobreNosotrosComponent,
     SoporteComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardUserComponent
   ],
   imports: [ ComponentsModule, AppRoutingModule, CommonModule, ReactiveFormsModule ],
   exports: [
