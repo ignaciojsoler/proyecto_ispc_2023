@@ -13,6 +13,7 @@ import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.componen
 import { SoporteComponent } from './soporte/soporte.component';
 import { ComponentsModule } from '../components/components.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [ 
@@ -24,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PagosComponent,
     RegistroComponent,
     SobreNosotrosComponent,
-    SoporteComponent
+    SoporteComponent,
+    DashboardComponent
   ],
   imports: [ ComponentsModule, AppRoutingModule, CommonModule, ReactiveFormsModule ],
   exports: [
@@ -36,7 +38,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PagosComponent,
     RegistroComponent,
     SobreNosotrosComponent,
-    SoporteComponent
+    SoporteComponent,
+    DashboardComponent
   ],
 })
 
