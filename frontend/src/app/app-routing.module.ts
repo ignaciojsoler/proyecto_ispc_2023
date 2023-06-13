@@ -12,6 +12,7 @@ import { SoporteComponent } from './pages/soporte/soporte.component';
 import { DatosPrestadorComponent } from './pages/datos-prestador/datos-prestador.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DashboardUserComponent } from './pages/dashboard-user/dashboard-user.component';
+import { PerfilUserComponent } from './pages/perfil-user/perfil-user.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'datos-prestador', component: DatosPrestadorComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'dashboard-user', component: DashboardUserComponent },
+  { path: 'perfil-user', component: PerfilUserComponent},
 ];
 
 @NgModule({
