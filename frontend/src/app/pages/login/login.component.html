@@ -58,8 +58,9 @@
           </label>
           <span><a href="#"> Olvidé mi contraseña</a></span>
         </div>
-        <button type="submit" class="formulario__button">
-          <a routerLink="">INICIAR SESIÓN</a>
+        <button type="submit" class="formulario__button" [disabled]="email.invalid || password.invalid">
+          INICIAR SESIÓN
+          <!--<a routerLink="">INICIAR SESIÓN</a> (eliminado porque generaba interferencia)-->
         </button>
         <h5 class="formulario__registrarse">
           ¿Todavía no tenés una cuenta?

@@ -210,7 +210,7 @@
                 El precio por hora es obligatorio
               </div>
         </ng-container>
-        <button type="submit" class="formulario__button selected">REGISTRARSE</button>
+        <button type="submit" class="formulario__button selected" [disabled]="name.invalid || surname.invalid || email.invalid || password.invalid || repeatpassword.invalid && address.invalid || city.invalid || province.invalid || country.invalid">REGISTRARSE</button>
       </form>
     </div>
   </div>
